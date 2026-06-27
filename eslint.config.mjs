@@ -12,7 +12,19 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Tooling and skill scripts — not part of the application source.
+    ".claude/**",
+    ".agents/**",
   ]),
+  {
+    rules: {
+      // Apostrophes in editorial copy render fine; this rule is pure noise here.
+      "react/no-unescaped-entities": "off",
+      // SSR-safe mount flags and media-query/storage syncing legitimately set
+      // state from effects on the client.
+      "react-hooks/set-state-in-effect": "off",
+    },
+  },
 ]);
 
 export default eslintConfig;

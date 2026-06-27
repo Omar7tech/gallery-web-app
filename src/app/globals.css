@@ -1,26 +1,339 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ============================================================================
+   SOLERA — DESIGN SYSTEM
+   Named after the solera method: heritage layered over time, the sunlit floor.
+   Palette intentionally avoids the cream+serif+terracotta and black+acid-green
+   defaults. Conservatory green (Patina) + warm Brass + espresso Ink + warm
+   Chalk paper + muted Sage. Editorial, warm, timeless.
+============================================================================ */
+
+@theme {
+  /* ---- Color: brand core ---- */
+  --color-ink: #14120f; /* Cellar — warm near-black, primary text & dark panels */
+  --color-ink-soft: #2a2722; /* softened ink for secondary text on light */
+  --color-chalk: #ece6da; /* warm stone paper — primary light background */
+  --color-chalk-deep: #e2dbca; /* recessed chalk surface */
+  --color-paper: #f6f2e9; /* lifted paper — cards on chalk */
+  --color-patina: #2c4138; /* conservatory green — brand accent / dark alt panels */
+  --color-patina-soft: #3c574b;
+  --color-brass: #b4894e; /* warm metallic — hairlines, the horizon node, accents */
+  --color-brass-soft: #c9a878;
+  --color-sage: #97a08c; /* muted green-grey — borders, captions, muted text */
+  --color-sage-soft: #b9c0ad;
+
+  /* ---- Semantic surface tokens ---- */
+  --color-background: var(--color-chalk);
+  --color-foreground: var(--color-ink);
+  --color-muted: #6f6a5e; /* AA on chalk */
+  --color-line: #d4cdba; /* hairline rules on light */
+  --color-line-dark: #3a352c; /* hairline rules on dark */
+
+  /* ---- Status ---- */
+  --color-success: #4b6b4d;
+  --color-error: #8d3b2e;
+
+  /* ---- Typography ---- */
+  --font-display: var(--font-fraunces), "Times New Roman", serif;
+  --font-sans: var(--font-hanken), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, "SF Mono", monospace;
+
+  /* ---- Type scale (fluid, editorial) ---- */
+  --text-2xs: 0.6875rem;
+  --text-xs: 0.75rem;
+  --text-sm: 0.8125rem;
+  --text-base: 0.9375rem;
+  --text-lg: 1.0625rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 2rem;
+  --text-4xl: 2.75rem;
+  --text-5xl: 3.5rem;
+  --text-6xl: clamp(2.75rem, 6vw, 5rem);
+  --text-7xl: clamp(3.5rem, 9vw, 7.5rem);
+  --text-8xl: clamp(4.5rem, 13vw, 11rem);
+
+  /* ---- Radius (restrained) ---- */
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 14px;
+  --radius-xl: 24px;
+
+  /* ---- Elevation: warm, low-contrast, never harsh ---- */
+  --shadow-xs: 0 1px 2px rgba(20, 18, 15, 0.04);
+  --shadow-sm: 0 2px 8px rgba(20, 18, 15, 0.05), 0 1px 2px rgba(20, 18, 15, 0.04);
+  --shadow-md: 0 8px 24px rgba(20, 18, 15, 0.07), 0 2px 6px rgba(20, 18, 15, 0.05);
+  --shadow-lg: 0 24px 60px rgba(20, 18, 15, 0.1), 0 6px 16px rgba(20, 18, 15, 0.06);
+  --shadow-glow: 0 0 0 1px rgba(180, 137, 78, 0.25), 0 12px 40px rgba(44, 65, 56, 0.12);
+
+  /* ---- Motion ---- */
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out-soft: cubic-bezier(0.65, 0, 0.35, 1);
+
+  /* ---- Layout ---- */
+  --spacing-gutter: clamp(1.25rem, 4vw, 4.5rem);
+  --container-page: 1680px;
+
+  /* ---- Breakpoints (375/768/1024/1280/1440/1920) ---- */
+  --breakpoint-xs: 375px;
+  --breakpoint-sm: 768px;
+  --breakpoint-md: 1024px;
+  --breakpoint-lg: 1280px;
+  --breakpoint-xl: 1440px;
+  --breakpoint-2xl: 1920px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* ============================================================================
+   BASE
+============================================================================ */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  *,
+  *::before,
+  *::after {
+    border-color: var(--color-line);
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+    font-feature-settings: "liga" 1, "calt" 1;
+  }
+
+  body {
+    background: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    font-size: var(--text-base);
+    line-height: 1.65;
+    letter-spacing: -0.006em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    font-weight: 380;
+    line-height: 1.04;
+    letter-spacing: -0.022em;
+    text-wrap: balance;
+  }
+
+  ::selection {
+    background: var(--color-patina);
+    color: var(--color-chalk);
+  }
+
+  /* Brand focus ring — brass, generous, never removed */
+  :focus-visible {
+    outline: 2px solid var(--color-brass);
+    outline-offset: 3px;
+    border-radius: var(--radius-xs);
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  /* Custom scrollbar — subtle, brand-aligned */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-chalk-deep);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-sage);
+    border-radius: 999px;
+    border: 3px solid var(--color-chalk-deep);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-patina);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* ============================================================================
+   SIGNATURE — THE HORIZON LINE
+   A hairline that runs across the composition with a brass node. It draws in on
+   scroll. Oversized serial numbers (Nº 01) pair with it.
+============================================================================ */
+
+@layer components {
+  /* Eyebrow / kicker label — tracked-out mono caps */
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .serial {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.02em;
+  }
+
+  /* The horizon line: a rule with a brass node on the left */
+  .horizon {
+    position: relative;
+    height: 1px;
+    width: 100%;
+    background: var(--color-line);
+    transform-origin: left center;
+  }
+  .horizon::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 7px;
+    height: 7px;
+    border-radius: 999px;
+    background: var(--color-brass);
+    translate: -50% -50%;
+  }
+  .horizon--dark {
+    background: var(--color-line-dark);
+  }
+
+  /* Animated underline used on inline links and nav items */
+  .link-underline {
+    position: relative;
+  }
+  .link-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 1px;
+    width: 100%;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: right center;
+    transition: transform 0.5s var(--ease-out-soft);
+  }
+  .link-underline:hover::after,
+  .link-underline:focus-visible::after {
+    transform: scaleX(1);
+    transform-origin: left center;
+  }
+
+  /* Editorial body copy block */
+  .prose-editorial p {
+    max-width: 64ch;
+    color: var(--color-ink-soft);
+    line-height: 1.75;
+  }
+  .prose-editorial p + p {
+    margin-top: 1.25em;
+  }
+
+  /* Image overlay grain/duotone helpers for photography direction */
+  .img-frame {
+    position: relative;
+    overflow: hidden;
+    background: var(--color-chalk-deep);
+  }
+  .img-frame::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      180deg,
+      transparent 55%,
+      rgba(20, 18, 15, 0.28) 100%
+    );
+    pointer-events: none;
+  }
+}
+
+@layer utilities {
+  .container-page {
+    width: 100%;
+    max-width: var(--container-page);
+    margin-inline: auto;
+    padding-inline: var(--spacing-gutter);
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+  .text-pretty {
+    text-wrap: pretty;
+  }
+
+  /* GSAP reveal initial states — JS adds .is-ready when animating in. Without
+     JS (or with reduced motion) content stays visible. */
+  .reveal-ready [data-reveal] {
+    opacity: 0;
+  }
+
+  /* Hide content visually but keep it for screen readers */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+}
+
+/* ============================================================================
+   KEYFRAMES
+============================================================================ */
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* ============================================================================
+   REDUCED MOTION — animations degrade to instant, content always visible
+============================================================================ */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal-ready [data-reveal] {
+    opacity: 1 !important;
+  }
 }
