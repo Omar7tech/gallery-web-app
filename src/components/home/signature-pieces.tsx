@@ -50,13 +50,13 @@ export function SignaturePieces() {
 
               <div className={cn("md:col-span-1", flip && "md:order-1")}>
                 <Reveal variant="up" y={28}>
-                  <span className="serial text-8xl text-chalk-deep">
-                    {product.serial}
-                  </span>
-                  <p className="eyebrow mt-2 text-muted">
-                    {product.category} — {product.designer}
-                  </p>
-                  <h3 className="mt-4 font-display text-4xl text-ink md:text-5xl">
+                  <div className="flex items-center gap-3">
+                    <span className="h-px w-7 bg-brass" aria-hidden />
+                    <p className="eyebrow text-muted">
+                      {product.category}, by {product.designer}
+                    </p>
+                  </div>
+                  <h3 className="mt-5 font-display text-5xl text-ink md:text-6xl">
                     {product.name}
                   </h3>
                   <p className="prose-editorial mt-5 max-w-md text-lg leading-relaxed text-ink-soft">

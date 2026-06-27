@@ -98,7 +98,7 @@ const seeds: Seed[] = [
     short:
       "A low, deep modular system built around the long evening. Down-wrapped cushions over an 8-way hand-tied frame.",
     story:
-      "Halden began as a sketch of the way people actually sit at the end of a day — sideways, legs up, half-turned toward each other. We widened the seat, dropped the back, and tied every spring by hand so it holds that posture for thirty years.",
+      "Halden began as a sketch of the way people actually sit at the end of a day - sideways, legs up, half-turned toward each other. We widened the seat, dropped the back, and tied every spring by hand so it holds that posture for thirty years.",
     images: [IMG.sofaA, IMG.livingHero, IMG.sofaC, IMG.livingB],
     colorFamily: "neutral",
     materials: ["european-oak", "belgian-linen", "boucle-wool"],
@@ -182,7 +182,7 @@ const seeds: Seed[] = [
     short:
       "A thin brass stem and a linen shade that turns a corner into an hour.",
     story:
-      "Lumen is the light we kept reaching for in our own studio at dusk — warm, low, and aimed at the page. The stem is solid living brass, left unlacquered to patina with the room.",
+      "Lumen is the light we kept reaching for in our own studio at dusk - warm, low, and aimed at the page. The stem is solid living brass, left unlacquered to patina with the room.",
     images: [IMG.interiorN, IMG.interiorD, IMG.interiorE, IMG.livingB],
     colorFamily: "warm",
     materials: ["patina-brass", "belgian-linen"],
@@ -209,7 +209,7 @@ const seeds: Seed[] = [
     short:
       "A low platform and a headboard that meets the wall like a horizon. Belgian linen over a hardwood frame.",
     story:
-      "Maren is built around the idea of a calm horizon line — the headboard is a single soft plane, upholstered in heavyweight linen and floated just above the floor.",
+      "Maren is built around the idea of a calm horizon line - the headboard is a single soft plane, upholstered in heavyweight linen and floated just above the floor.",
     images: [IMG.bedroomHero, IMG.bedroomA, IMG.bedroomB, IMG.bedroomC],
     colorFamily: "neutral",
     materials: ["european-oak", "belgian-linen"],
@@ -238,7 +238,7 @@ const seeds: Seed[] = [
     short:
       "A single soft-close drawer over an open shelf, in solid smoked walnut.",
     story:
-      "Søren is the quiet companion to the Maren bed — a small case piece with a hand-cut dovetail drawer and a recess sized for a book and a glass of water.",
+      "Søren is the quiet companion to the Maren bed - a small case piece with a hand-cut dovetail drawer and a recess sized for a book and a glass of water.",
     images: [IMG.bedroomB, IMG.craftB, IMG.interiorF, IMG.bedroomC],
     colorFamily: "earth",
     materials: ["smoked-walnut", "patina-brass"],
@@ -265,7 +265,7 @@ const seeds: Seed[] = [
     short:
       "A tall, fluted oak case with brass pulls and a hand-waxed interior of cedar.",
     story:
-      "Linnea is a wardrobe in the old sense — built to be inherited. The fluted doors are milled from a single board so the rhythm continues across the front, and the interior is lined in aromatic cedar.",
+      "Linnea is a wardrobe in the old sense - built to be inherited. The fluted doors are milled from a single board so the rhythm continues across the front, and the interior is lined in aromatic cedar.",
     images: [IMG.interiorF, IMG.bedroomA, IMG.interiorG, IMG.bedroomHero],
     colorFamily: "warm",
     materials: ["european-oak", "patina-brass"],
@@ -299,7 +299,7 @@ const seeds: Seed[] = [
       ["Length", "260 cm"],
       ["Width", "100 cm"],
       ["Height", "74 cm"],
-      ["Seats", "8–10"],
+      ["Seats", "8-10"],
     ],
     lead: 13,
     best: true,
@@ -375,7 +375,7 @@ const seeds: Seed[] = [
     short:
       "The proportions of a writing table with a hidden cable channel and a leather-lined drawer.",
     story:
-      "Edda hides its function. It reads as a writing table — slim legs, a thin top — but a routed channel carries cables out of sight and a single drawer is lined in saddle leather for the things you reach for.",
+      "Edda hides its function. It reads as a writing table - slim legs, a thin top - but a routed channel carries cables out of sight and a single drawer is lined in saddle leather for the things you reach for.",
     images: [IMG.officeHero, IMG.officeA, IMG.officeB, IMG.interiorO],
     colorFamily: "warm",
     materials: ["european-oak", "saddle-leather"],
@@ -436,8 +436,8 @@ const seeds: Seed[] = [
     dims: [
       ["Width", "62 cm"],
       ["Depth", "60 cm"],
-      ["Height", "92–102 cm"],
-      ["Seat height", "44–54 cm"],
+      ["Height", "92-102 cm"],
+      ["Seat height", "44-54 cm"],
     ],
     lead: 8,
     isNew: true,
@@ -486,7 +486,7 @@ const seeds: Seed[] = [
     short:
       "A teak chaise with a woven cord deck that dries in minutes and lasts for decades.",
     story:
-      "Dune is the long afternoon, distilled. A teak frame carries a hand-woven marine-cord deck that needs no cushion — it dries in minutes and only softens with use.",
+      "Dune is the long afternoon, distilled. A teak frame carries a hand-woven marine-cord deck that needs no cushion - it dries in minutes and only softens with use.",
     images: [IMG.outdoorA, IMG.interiorK, IMG.outdoorHero, IMG.interiorJ],
     colorFamily: "warm",
     materials: ["european-oak", "blackened-steel"],

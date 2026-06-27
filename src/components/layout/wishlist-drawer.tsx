@@ -20,7 +20,7 @@ export function WishlistDrawer({
   const saved = products.filter((p) => items.includes(p.slug));
 
   return (
-    <Drawer open={open} onClose={onClose} title={`Wishlist — ${saved.length}`}>
+    <Drawer open={open} onClose={onClose} title={`Wishlist - ${saved.length}`}>
       {saved.length === 0 ? (
         <div className="flex h-full flex-col items-center justify-center gap-4 px-8 text-center">
           <span className="grid h-16 w-16 place-items-center rounded-full bg-chalk-deep text-sage">

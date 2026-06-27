@@ -12,7 +12,7 @@ import { JsonLdScript, breadcrumbSchema } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "Testimonials",
   description:
-    "What Solera clients say — collectors, architects, and homeowners on the pieces and the service.",
+    "What Solera clients say - collectors, architects, and homeowners on the pieces and the service.",
 };
 
 export default function TestimonialsPage() {
@@ -28,7 +28,7 @@ export default function TestimonialsPage() {
         serial="10"
         eyebrow="In Their Words"
         title="Trusted with the rooms that matter."
-        intro="Collectors, architects, and homeowners on living with Solera — the pieces, the patience, and the people behind the bench."
+        intro="Collectors, architects, and homeowners on living with Solera - the pieces, the patience, and the people behind the bench."
         crumbs={[{ label: "Home", href: "/" }, { label: "Testimonials" }]}
         image={unsplash(IMG.interiorM, { w: 2000, h: 1100, q: 80 })}
       />
@@ -69,7 +69,7 @@ export default function TestimonialsPage() {
                   <div>
                     <p className="font-medium text-ink">{t.author}</p>
                     <p className="text-sm text-muted">
-                      {t.role} — {t.location}
+                      {t.role} - {t.location}
                     </p>
                   </div>
                 </figcaption>

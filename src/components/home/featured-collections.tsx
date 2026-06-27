@@ -13,7 +13,7 @@ export function FeaturedCollections() {
         serial="02"
         eyebrow="The Collections"
         title="Five rooms, one quiet language."
-        intro="Each collection is designed as a single, slow gesture — scaled for the way people actually live, gather, work, and rest."
+        intro="Each collection is designed as a single, slow gesture - scaled for the way people actually live, gather, work, and rest."
         link={{ label: "All collections", href: "/collections" }}
       />
 

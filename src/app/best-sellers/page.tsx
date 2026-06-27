@@ -9,7 +9,7 @@ import { IMG } from "@/lib/images";
 export const metadata: Metadata = {
   title: "Best Sellers",
   description:
-    "The Solera pieces our clients return for — the most-requested sofas, tables, beds, and chairs in the collection.",
+    "The Solera pieces our clients return for - the most-requested sofas, tables, beds, and chairs in the collection.",
 };
 
 export default function BestSellersPage() {
@@ -22,10 +22,10 @@ export default function BestSellersPage() {
         ])}
       />
       <PageHeader
-        serial="—"
+        serial="-"
         eyebrow="Most Requested"
         title="Best sellers."
-        intro="The pieces that have furnished the most homes — chosen again and again for the way they live, not just the way they look."
+        intro="The pieces that have furnished the most homes - chosen again and again for the way they live, not just the way they look."
         crumbs={[{ label: "Home", href: "/" }, { label: "Best Sellers" }]}
         image={unsplash(IMG.sofaA, { w: 2000, h: 1100, q: 80 })}
       />

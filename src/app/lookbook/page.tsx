@@ -31,7 +31,7 @@ const ratioClass = {
 export const metadata: Metadata = {
   title: "Lookbook",
   description:
-    "The Solera lookbook — our pieces photographed where they live, across apartments, farmhouses, studios, and retreats.",
+    "The Solera lookbook - our pieces photographed where they live, across apartments, farmhouses, studios, and retreats.",
 };
 
 export default function LookbookPage() {
@@ -47,7 +47,7 @@ export default function LookbookPage() {
         serial="08"
         eyebrow="The Lookbook"
         title="A room is a single composition."
-        intro="Our pieces, photographed where they live — across apartments, farmhouses, studios, and retreats. Less a catalogue than a way of seeing."
+        intro="Our pieces, photographed where they live - across apartments, farmhouses, studios, and retreats. Less a catalogue than a way of seeing."
         crumbs={[{ label: "Home", href: "/" }, { label: "Lookbook" }]}
         image={unsplash(IMG.interiorD, { w: 2000, h: 1100, q: 80 })}
       />

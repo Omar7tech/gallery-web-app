@@ -10,7 +10,7 @@ import { JsonLdScript, breadcrumbSchema } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "Buying Guide",
   description:
-    "How to buy furniture meant to last — measuring your space, judging solid wood, choosing materials, and understanding made-to-order lead times.",
+    "How to buy furniture meant to last - measuring your space, judging solid wood, choosing materials, and understanding made-to-order lead times.",
 };
 
 const sections = [
@@ -19,7 +19,7 @@ const sections = [
     n: "01",
     title: "Measure twice, order once",
     paras: [
-      "Before anything else, draw your room to scale — including doorways, the swing of doors, radiators, and the path the piece must travel to get in. The most common regret in furniture is not style; it's a sofa that won't make the turn on the stairs.",
+      "Before anything else, draw your room to scale - including doorways, the swing of doors, radiators, and the path the piece must travel to get in. The most common regret in furniture is not style; it's a sofa that won't make the turn on the stairs.",
       "Leave generous circulation space: 90cm for primary walkways, 60cm minimum elsewhere. A piece that fits the floor plan but chokes the room is the wrong piece.",
     ],
   },
@@ -28,7 +28,7 @@ const sections = [
     n: "02",
     title: "How to judge solid wood",
     paras: [
-      "Turn a drawer over and look at the corner joint. A cut dovetail signals care; staples signal cost-cutting. On a tabletop, check that the grain continues around the edge — a real board, not a veneer wrapped over particleboard.",
+      "Turn a drawer over and look at the corner joint. A cut dovetail signals care; staples signal cost-cutting. On a tabletop, check that the grain continues around the edge - a real board, not a veneer wrapped over particleboard.",
       "Ask how the piece is finished. Hand-rubbed oil and wax can be repaired in place for a lifetime; a thick polyurethane shell looks perfect for five years and then can't be mended at all.",
     ],
   },
@@ -46,7 +46,7 @@ const sections = [
     n: "04",
     title: "Understand made-to-order",
     paras: [
-      "Made-to-order furniture is built for you after you order — which is why it takes eight to fourteen weeks. That wait buys grain-matched timber, your exact finish and fabric, and a piece that was never sitting in a warehouse.",
+      "Made-to-order furniture is built for you after you order - which is why it takes eight to fourteen weeks. That wait buys grain-matched timber, your exact finish and fabric, and a piece that was never sitting in a warehouse.",
       "Plan around it. Order early, especially for dining tables and beds, and treat the lead time as part of the craft rather than a delay.",
     ],
   },
@@ -55,7 +55,7 @@ const sections = [
     n: "05",
     title: "Buy fewer, better things",
     paras: [
-      "A single excellent piece outlives a room full of disposable ones, financially and aesthetically. Spend on the objects you touch every day — the sofa, the bed, the dining table — and let them anchor everything else.",
+      "A single excellent piece outlives a room full of disposable ones, financially and aesthetically. Spend on the objects you touch every day - the sofa, the bed, the dining table - and let them anchor everything else.",
       "Think in decades. The right question is not 'can I afford this now?' but 'what will this cost me per year across the next thirty?'",
     ],
   },
@@ -71,10 +71,10 @@ export default function BuyingGuidePage() {
         ])}
       />
       <PageHeader
-        serial="—"
+        serial="-"
         eyebrow="Guidance"
         title="How to buy furniture for life."
-        intro="A short, honest guide to choosing pieces that will still serve — and still look right — decades from now. No upsell, just what we'd tell a friend."
+        intro="A short, honest guide to choosing pieces that will still serve - and still look right - decades from now. No upsell, just what we'd tell a friend."
         crumbs={[{ label: "Home", href: "/" }, { label: "Buying Guide" }]}
         image={unsplash(IMG.interiorB, { w: 2000, h: 1100, q: 80 })}
       />

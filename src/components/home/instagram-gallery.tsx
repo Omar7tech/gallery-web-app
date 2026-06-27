@@ -20,7 +20,7 @@ export function InstagramGallery() {
     <section className="bg-paper py-24 md:py-32">
       <div className="container-page">
         <div className="flex flex-col items-center gap-4 text-center">
-          <span className="eyebrow text-muted">Nº 12 — In the Wild</span>
+          <span className="eyebrow text-muted">Nº 12 - In the Wild</span>
           <h2 className="font-display text-4xl text-ink md:text-5xl">
             Lives lived around our work
           </h2>

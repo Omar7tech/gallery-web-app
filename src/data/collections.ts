@@ -10,7 +10,7 @@ export const collections: Collection[] = [
     description:
       "Low, generous seating and quiet tables built for long conversation and longer light. The living collection is where Solera begins.",
     story:
-      "We design the living room as a single, slow gesture — a sofa that invites you to stay, a table worn smooth by years of hands. Each piece is scaled for the way people actually gather: knees close, voices low, the lamp left on a little too long.",
+      "We design the living room as a single, slow gesture - a sofa that invites you to stay, a table worn smooth by years of hands. Each piece is scaled for the way people actually gather: knees close, voices low, the lamp left on a little too long.",
     image: unsplash(IMG.livingHero, { w: 1600, h: 1100, q: 80 }),
     accentImage: unsplash(IMG.sofaA, { w: 1200, h: 1500, q: 80 }),
     pieceCount: 42,
@@ -23,7 +23,7 @@ export const collections: Collection[] = [
     description:
       "Beds, cases, and seating composed for rest. Soft architecture, honest materials, nothing that asks for attention.",
     story:
-      "The bedroom is the most private room we make for. We keep its language calm — upholstered headboards that meet the wall like a horizon, oak cases with a hand-rubbed wax that warms over decades. Furniture you reach for half-asleep and never have to think about.",
+      "The bedroom is the most private room we make for. We keep its language calm - upholstered headboards that meet the wall like a horizon, oak cases with a hand-rubbed wax that warms over decades. Furniture you reach for half-asleep and never have to think about.",
     image: unsplash(IMG.bedroomHero, { w: 1600, h: 1100, q: 80 }),
     accentImage: unsplash(IMG.bedroomA, { w: 1200, h: 1500, q: 80 }),
     pieceCount: 31,
@@ -34,7 +34,7 @@ export const collections: Collection[] = [
     name: "Dining",
     tagline: "A table is an argument for staying",
     description:
-      "Tables and chairs built around the long meal — solid timber, forgiving finishes, seating you don't want to leave.",
+      "Tables and chairs built around the long meal - solid timber, forgiving finishes, seating you don't want to leave.",
     story:
       "A dining table is the most used object we make, and the most demanding. Ours are built from single-origin timber with breadboard ends that let the wood move with the seasons. We finish them to be lived on, not protected from.",
     image: unsplash(IMG.diningHero, { w: 1600, h: 1100, q: 80 }),
@@ -49,7 +49,7 @@ export const collections: Collection[] = [
     description:
       "Desks, shelving, and chairs for the room you think in. Considered ergonomics under a calm, residential surface.",
     story:
-      "The home office should not look like an office. We design desks with the proportions of a writing table and storage that reads as furniture, not infrastructure — so the room can be a study again when the laptop closes.",
+      "The home office should not look like an office. We design desks with the proportions of a writing table and storage that reads as furniture, not infrastructure - so the room can be a study again when the laptop closes.",
     image: unsplash(IMG.officeHero, { w: 1600, h: 1100, q: 80 }),
     accentImage: unsplash(IMG.officeA, { w: 1200, h: 1500, q: 80 }),
     pieceCount: 18,

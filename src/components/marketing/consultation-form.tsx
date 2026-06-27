@@ -79,7 +79,7 @@ export function ConsultationForm({
         <h3 className="font-display text-3xl text-ink">Thank you, {form.name.split(" ")[0]}.</h3>
         <p className="max-w-sm text-ink-soft">
           Your request is with our design team. Expect a personal reply within
-          one business day — we read every one.
+          one business day - we read every one.
         </p>
         <Button
           variant="outline"
@@ -150,8 +150,8 @@ export function ConsultationForm({
           onChange={(e) => set("budget", e.target.value)}
           options={[
             { value: "under-10k", label: "Under $10,000" },
-            { value: "10-25k", label: "$10,000 – $25,000" },
-            { value: "25-75k", label: "$25,000 – $75,000" },
+            { value: "10-25k", label: "$10,000 - $25,000" },
+            { value: "25-75k", label: "$25,000 - $75,000" },
             { value: "75k-plus", label: "$75,000+" },
           ]}
         />

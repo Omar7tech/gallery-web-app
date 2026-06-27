@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
     title: `${collection.name} Collection`,
     description: collection.description,
     openGraph: {
-      title: `${collection.name} — Solera Collection`,
+      title: `${collection.name} - Solera Collection`,
       description: collection.description,
       images: [collection.image],
     },
@@ -87,7 +87,7 @@ export default async function CollectionPage({ params }: Params) {
 
       {/* Other collections */}
       <section className="container-page border-t border-line py-20 md:py-28">
-        <SectionHeader serial="—" eyebrow="Keep exploring" title="Other rooms." />
+        <SectionHeader serial="-" eyebrow="Keep exploring" title="Other rooms." />
         <div className="mt-12 grid gap-5 md:grid-cols-3 md:gap-6">
           {others.map((c) => (
             <CollectionCard key={c.slug} collection={c} size="tall" />

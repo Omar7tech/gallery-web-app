@@ -33,7 +33,7 @@ export function SustainabilitySection() {
         serial="09"
         eyebrow="Honestly Made"
         title="Sustainability without the slogans."
-        intro="We don't offset our way to a clean conscience. We make fewer, better things, from materials that last — and we tell you exactly how."
+        intro="We don't offset our way to a clean conscience. We make fewer, better things, from materials that last - and we tell you exactly how."
         link={{ label: "Our commitments", href: "/sustainability" }}
       />
 

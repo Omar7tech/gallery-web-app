@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 
 /**
- * SOLERA wordmark — typographic, set in the display face with a brass horizon
+ * SOLERA wordmark - typographic, set in the display face with a brass horizon
  * node over the first letter (the signature mark). Scales cleanly via type.
  */
 export function Logo({

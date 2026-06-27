@@ -9,11 +9,11 @@ export function ProductCard({
   product,
   priority = false,
   className,
-  index,
 }: {
   product: Product;
   priority?: boolean;
   className?: string;
+  /** @deprecated index overlay retired; accepted for call-site compatibility. */
   index?: number;
 }) {
   return (
@@ -49,12 +49,6 @@ export function ProductCard({
               <Badge variant="solid">Best Seller</Badge>
             )}
           </div>
-
-          {typeof index === "number" && (
-            <span className="serial absolute bottom-3 left-3 text-2xs text-chalk/90">
-              Nº {String(index + 1).padStart(2, "0")}
-            </span>
-          )}
         </div>
 
         <div className="flex items-start justify-between gap-4">

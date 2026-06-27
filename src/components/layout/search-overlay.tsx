@@ -164,7 +164,7 @@ export function SearchOverlay({
             {results.length > 0 && (
               <div>
                 <p className="eyebrow mb-3 text-muted">
-                  Pieces — {results.length}
+                  Pieces - {results.length}
                 </p>
                 <ul className="divide-y divide-line">
                   {results.map((p) => (

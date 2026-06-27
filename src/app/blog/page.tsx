@@ -13,7 +13,7 @@ import { JsonLdScript, breadcrumbSchema } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "Journal",
   description:
-    "The Solera journal — essays on craft, materials, and living well with furniture meant to last.",
+    "The Solera journal - essays on craft, materials, and living well with furniture meant to last.",
 };
 
 export default function BlogPage() {
@@ -28,10 +28,10 @@ export default function BlogPage() {
         ])}
       />
       <PageHeader
-        serial="—"
+        serial="-"
         eyebrow="The Journal"
         title="Notes from the bench."
-        intro="Essays on craft, materials, and the slow art of furnishing a home you'll keep — written by the people who make the work."
+        intro="Essays on craft, materials, and the slow art of furnishing a home you'll keep - written by the people who make the work."
         crumbs={[{ label: "Home", href: "/" }, { label: "Journal" }]}
         image={unsplash(IMG.craftB, { w: 2000, h: 1100, q: 80 })}
       />

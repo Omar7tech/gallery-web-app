@@ -21,7 +21,7 @@ export default function NotFound() {
       <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/70 to-ink/40" />
 
       <div className="container-page relative z-10 py-32">
-        <p className="eyebrow text-brass-soft">Error 404 — Page not found</p>
+        <p className="eyebrow text-brass-soft">Error 404 - Page not found</p>
         <p className="mt-6 font-display text-[28vw] leading-[0.8] text-chalk/10 md:text-[18vw]">
           404
         </p>

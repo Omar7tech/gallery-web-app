@@ -98,7 +98,7 @@ export function Navigation() {
           {/* Center: logo */}
           <Link
             href="/"
-            aria-label="Solera — home"
+            aria-label="Solera - home"
             className="absolute left-1/2 -translate-x-1/2"
           >
             <Logo />

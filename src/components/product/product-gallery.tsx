@@ -63,7 +63,7 @@ export function ProductGallery({
           <Image
             key={src}
             src={src}
-            alt={`${name} — view ${i + 1}`}
+            alt={`${name} - view ${i + 1}`}
             fill
             priority={i === 0}
             sizes="(max-width: 1024px) 100vw, 50vw"
@@ -110,7 +110,7 @@ export function ProductGallery({
               <Image
                 key={images[active]}
                 src={images[active]}
-                alt={`${name} — view ${active + 1}`}
+                alt={`${name} - view ${active + 1}`}
                 fill
                 sizes="100vw"
                 className="object-contain p-4"

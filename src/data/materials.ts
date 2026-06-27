@@ -19,7 +19,7 @@ export const materials: MaterialSwatch[] = [
     hex: "#4f3b2d",
     image: unsplash(IMG.craftB, { w: 600, h: 600, q: 80 }),
     origin: "Black Forest, Germany",
-    note: "Fumed with ammonia to deepen the grain from the inside out — never stained.",
+    note: "Fumed with ammonia to deepen the grain from the inside out - never stained.",
   },
   {
     id: "travertine",
@@ -37,7 +37,7 @@ export const materials: MaterialSwatch[] = [
     hex: "#b4894e",
     image: unsplash(IMG.interiorN, { w: 600, h: 600, q: 80 }),
     origin: "Sheffield, England",
-    note: "Solid, unlacquered brass. Left to develop a patina, or kept bright — the choice is yours.",
+    note: "Solid, unlacquered brass. Left to develop a patina, or kept bright - the choice is yours.",
   },
   {
     id: "blackened-steel",

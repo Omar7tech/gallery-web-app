@@ -3,7 +3,7 @@
 import { useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowDown, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { gsap, useGSAP } from "@/lib/gsap";
 import { unsplash } from "@/lib/utils";
 import { IMG } from "@/lib/images";
@@ -93,31 +93,31 @@ export function Hero() {
         className="absolute inset-0 -z-10 bg-gradient-to-t from-ink via-ink/45 to-ink/25"
       />
 
-      <div className="container-page pb-16 md:pb-20">
+      <div className="container-page pb-20 md:pb-24">
         <p data-hero-fade className="eyebrow mb-6 text-brass-soft">
-          Nº 01 — Furniture Atelier, est. 1998
+          Furniture atelier, since 1998
         </p>
-        <h1 className="max-w-5xl text-balance text-6xl leading-[0.98] text-chalk md:text-7xl lg:text-8xl">
+        <h1 className="max-w-4xl text-balance text-5xl leading-[0.96] text-chalk md:text-6xl lg:text-7xl">
           <TextReveal text="The art of living," trigger="load" />
-          <span className="block italic text-brass-soft">
+          <span className="block text-brass-soft">
             <TextReveal text="layered over time." trigger="load" delay={0.25} />
           </span>
         </h1>
 
         <div
           data-hero-fade
-          className="mt-9 flex flex-col gap-8 md:flex-row md:items-end md:justify-between"
+          className="mt-8 flex flex-col gap-7 md:flex-row md:items-end md:justify-between"
         >
-          <p className="max-w-md text-lg leading-relaxed text-chalk/75">
+          <p className="max-w-sm text-lg leading-relaxed text-chalk/75">
             Heirloom furniture, built to order in solid timber and honest
-            materials — and meant to be added to across a lifetime.
+            materials, made to be added to across a lifetime.
           </p>
           <div className="flex flex-wrap items-center gap-5">
             <MagneticLink
               href="/collections"
               className={buttonVariants({ variant: "brass", size: "lg" })}
             >
-              Explore Collections
+              Explore collections
               <ArrowRight size={17} aria-hidden />
             </MagneticLink>
             <Link
@@ -128,17 +128,6 @@ export function Hero() {
             </Link>
           </div>
         </div>
-      </div>
-
-      <div
-        data-hero-fade
-        className="container-page flex items-center gap-4 border-t border-line-dark py-5"
-      >
-        <ArrowDown size={15} aria-hidden className="animate-bounce text-brass-soft" />
-        <span className="eyebrow text-chalk/50">Scroll to begin</span>
-        <span className="ml-auto hidden font-mono text-xs text-chalk/40 sm:block">
-          Hudson, New York — 41.7°N
-        </span>
       </div>
     </section>
   );

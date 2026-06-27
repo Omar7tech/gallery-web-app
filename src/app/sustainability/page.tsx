@@ -22,7 +22,7 @@ const commitments = [
   { icon: Recycle, title: "Repaired, never replaced", body: "Oil and wax finishes are mended in place. We hold parts and offer refinishing for the life of the piece." },
   { icon: MapPin, title: "Short, local supply", body: "Cut, joined, and finished within a hundred miles of our Hudson workshop. Fewer miles, less freight, real accountability." },
   { icon: PackageOpen, title: "Plastic-free delivery", body: "Reusable blankets and recyclable crates. Our white-glove team removes and returns all packaging." },
-  { icon: Sprout, title: "Low-VOC throughout", body: "Water-based adhesives and natural finishes — better for the maker's lungs and your indoor air." },
+  { icon: Sprout, title: "Low-VOC throughout", body: "Water-based adhesives and natural finishes - better for the maker's lungs and your indoor air." },
 ];
 
 export default function SustainabilityPage() {
@@ -38,7 +38,7 @@ export default function SustainabilityPage() {
         serial="09"
         eyebrow="Honestly Made"
         title="Sustainability without the slogans."
-        intro="We don't offset our way to a clean conscience. We make fewer, better things from materials that last — and we tell you exactly how, with nothing rounded up."
+        intro="We don't offset our way to a clean conscience. We make fewer, better things from materials that last - and we tell you exactly how, with nothing rounded up."
         crumbs={[{ label: "Home", href: "/" }, { label: "Sustainability" }]}
         image={unsplash(IMG.interiorJ, { w: 2000, h: 1100, q: 80 })}
       />
@@ -94,7 +94,7 @@ export default function SustainabilityPage() {
         <CTABlock
           eyebrow="The longest-lasting choice"
           title="The greenest furniture is the kind you keep."
-          body="Buy once, keep for life, pass it down. It's the oldest sustainability strategy there is — and the one we're built around."
+          body="Buy once, keep for life, pass it down. It's the oldest sustainability strategy there is - and the one we're built around."
           primary={{ label: "Explore the collection", href: "/collections" }}
           secondary={{ label: "How it's made", href: "/craftsmanship" }}
           image={unsplash(IMG.outdoorHero, { w: 2000, h: 1100, q: 80 })}

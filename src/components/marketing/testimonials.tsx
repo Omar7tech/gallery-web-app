@@ -42,7 +42,7 @@ export function Testimonials({
             <div>
               <p className="font-medium text-ink">{current.author}</p>
               <p className="text-sm text-muted">
-                {current.role} — {current.location}
+                {current.role} - {current.location}
               </p>
             </div>
             <div className="flex items-center gap-2">

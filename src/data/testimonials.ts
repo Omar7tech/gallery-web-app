@@ -26,7 +26,7 @@ export const testimonials: Testimonial[] = [
   {
     id: "t3",
     quote:
-      "I've bought 'investment furniture' before and been disappointed. The difference here is honesty — you can feel the joinery, see the grain match. It's the real thing.",
+      "I've bought 'investment furniture' before and been disappointed. The difference here is honesty - you can feel the joinery, see the grain match. It's the real thing.",
     author: "Priya Raman",
     role: "Gallerist",
     location: "London, UK",
@@ -56,7 +56,7 @@ export const testimonials: Testimonial[] = [
   {
     id: "t6",
     quote:
-      "Service that remembers you. They followed up a year later with a care kit and a note. That's not marketing — that's a relationship.",
+      "Service that remembers you. They followed up a year later with a care kit and a note. That's not marketing - that's a relationship.",
     author: "Theo Maslin",
     role: "Restaurateur",
     location: "Melbourne, AU",

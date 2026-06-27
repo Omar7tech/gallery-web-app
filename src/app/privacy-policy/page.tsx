@@ -28,21 +28,21 @@ export default function PrivacyPolicyPage() {
           {
             heading: "What we collect",
             paras: [
-              "When you contact us, request a quote, or book a consultation, we collect the details you give us — your name, email, phone number, project location, and anything you choose to tell us about your space.",
+              "When you contact us, request a quote, or book a consultation, we collect the details you give us - your name, email, phone number, project location, and anything you choose to tell us about your space.",
               "When you browse, we use a small number of functional cookies and privacy-respecting analytics to understand how the site is used. We do not run advertising trackers.",
             ],
           },
           {
             heading: "How we use it",
             paras: [
-              "We use your information solely to respond to your enquiry, prepare quotes, fulfil orders, and — if you've opted in — send you our seasonal newsletter. That's the entire list.",
+              "We use your information solely to respond to your enquiry, prepare quotes, fulfil orders, and - if you've opted in - send you our seasonal newsletter. That's the entire list.",
               "Your wishlist and recently-viewed items are stored only in your own browser. They never reach our servers.",
             ],
           },
           {
             heading: "Who we share it with",
             paras: [
-              "We share information only with the partners required to serve you — for example, white-glove delivery firms — and only the minimum they need. We never sell or rent your data to anyone.",
+              "We share information only with the partners required to serve you - for example, white-glove delivery firms - and only the minimum they need. We never sell or rent your data to anyone.",
             ],
           },
           {

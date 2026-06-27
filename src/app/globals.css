@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /* ============================================================================
-   SOLERA — DESIGN SYSTEM
+   SOLERA - DESIGN SYSTEM
    Named after the solera method: heritage layered over time, the sunlit floor.
    Palette intentionally avoids the cream+serif+terracotta and black+acid-green
    defaults. Conservatory green (Patina) + warm Brass + espresso Ink + warm
@@ -9,32 +9,35 @@
 ============================================================================ */
 
 @theme {
-  /* ---- Color: brand core ---- */
-  --color-ink: #14120f; /* Cellar — warm near-black, primary text & dark panels */
-  --color-ink-soft: #2a2722; /* softened ink for secondary text on light */
-  --color-chalk: #ece6da; /* warm stone paper — primary light background */
-  --color-chalk-deep: #e2dbca; /* recessed chalk surface */
-  --color-paper: #f6f2e9; /* lifted paper — cards on chalk */
-  --color-patina: #2c4138; /* conservatory green — brand accent / dark alt panels */
-  --color-patina-soft: #3c574b;
-  --color-brass: #b4894e; /* warm metallic — hairlines, the horizon node, accents */
-  --color-brass-soft: #c9a878;
-  --color-sage: #97a08c; /* muted green-grey — borders, captions, muted text */
-  --color-sage-soft: #b9c0ad;
+  /* ---- Color: brand core ----
+     "Pine, Bone & Ember" - deliberately NOT the cream + brass + espresso
+     premium-consumer default. Deep pine green leads, a cool bone paper grounds
+     it, and a single saturated persimmon accent does the pointing. */
+  --color-ink: #16150f; /* warm near-black, primary text & dark panels */
+  --color-ink-soft: #33302a; /* softened ink for secondary text on light */
+  --color-chalk: #e6e4dc; /* cool bone paper - primary light background */
+  --color-chalk-deep: #dad8cc; /* recessed surface */
+  --color-paper: #f0eee6; /* lifted paper - cards on bone */
+  --color-patina: #1d3b2e; /* deep pine - brand colour / dark alt panels */
+  --color-patina-soft: #2c5341;
+  --color-brass: #c2562f; /* persimmon - the single saturated accent */
+  --color-brass-soft: #db8159; /* lighter persimmon for use on dark */
+  --color-sage: #8f978a; /* muted green-grey - borders, captions, muted text */
+  --color-sage-soft: #b4baad;
 
   /* ---- Semantic surface tokens ---- */
   --color-background: var(--color-chalk);
   --color-foreground: var(--color-ink);
-  --color-muted: #6f6a5e; /* AA on chalk */
-  --color-line: #d4cdba; /* hairline rules on light */
-  --color-line-dark: #3a352c; /* hairline rules on dark */
+  --color-muted: #6b675c; /* AA on bone */
+  --color-line: #d0cdc0; /* hairline rules on light */
+  --color-line-dark: #36322a; /* hairline rules on dark */
 
   /* ---- Status ---- */
-  --color-success: #4b6b4d;
-  --color-error: #8d3b2e;
+  --color-success: #2c5341;
+  --color-error: #b14a2c;
 
   /* ---- Typography ---- */
-  --font-display: var(--font-fraunces), "Times New Roman", serif;
+  --font-display: var(--font-bricolage), ui-sans-serif, system-ui, sans-serif;
   --font-sans: var(--font-hanken), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-geist-mono), ui-monospace, "SF Mono", monospace;
 
@@ -116,9 +119,9 @@
 
   h1, h2, h3, h4 {
     font-family: var(--font-display);
-    font-weight: 380;
-    line-height: 1.04;
-    letter-spacing: -0.022em;
+    font-weight: 520;
+    line-height: 1.02;
+    letter-spacing: -0.035em;
     text-wrap: balance;
   }
 
@@ -127,7 +130,7 @@
     color: var(--color-chalk);
   }
 
-  /* Brand focus ring — brass, generous, never removed */
+  /* Brand focus ring - brass, generous, never removed */
   :focus-visible {
     outline: 2px solid var(--color-brass);
     outline-offset: 3px;
@@ -143,7 +146,7 @@
     max-width: 100%;
   }
 
-  /* Custom scrollbar — subtle, brand-aligned */
+  /* Custom scrollbar - subtle, brand-aligned */
   ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
@@ -162,13 +165,13 @@
 }
 
 /* ============================================================================
-   SIGNATURE — THE HORIZON LINE
+   SIGNATURE - THE HORIZON LINE
    A hairline that runs across the composition with a brass node. It draws in on
    scroll. Oversized serial numbers (Nº 01) pair with it.
 ============================================================================ */
 
 @layer components {
-  /* Eyebrow / kicker label — tracked-out mono caps */
+  /* Eyebrow / kicker label - tracked-out mono caps */
   .eyebrow {
     font-family: var(--font-mono);
     font-size: var(--text-xs);
@@ -272,7 +275,7 @@
     text-wrap: pretty;
   }
 
-  /* GSAP reveal initial states — JS adds .is-ready when animating in. Without
+  /* GSAP reveal initial states - JS adds .is-ready when animating in. Without
      JS (or with reduced motion) content stays visible. */
   .reveal-ready [data-reveal] {
     opacity: 0;
@@ -319,7 +322,7 @@
 }
 
 /* ============================================================================
-   REDUCED MOTION — animations degrade to instant, content always visible
+   REDUCED MOTION - animations degrade to instant, content always visible
 ============================================================================ */
 @media (prefers-reduced-motion: reduce) {
   html {

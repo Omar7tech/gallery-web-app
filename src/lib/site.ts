@@ -7,7 +7,7 @@ export const SITE = {
   legalName: "Solera Furniture Atelier",
   tagline: "Furniture, layered like light.",
   description:
-    "Solera is a furniture atelier building heirloom pieces by the solera method — heritage craft blended with modern design, made to be added to across a lifetime and passed between generations.",
+    "Solera is a furniture atelier building heirloom pieces by the solera method - heritage craft blended with modern design, made to be added to across a lifetime and passed between generations.",
   url: "https://solera.example",
   email: "atelier@solera.example",
   phone: "+1 (212) 555-0142",
@@ -47,7 +47,7 @@ export const MEGA_MENU: MegaMenuPanel[] = [
       },
     ],
     feature: {
-      eyebrow: "Nº 01 — Featured",
+      eyebrow: "Featured",
       title: "The Hudson Edit",
       href: "/collections/living-room",
       image: unsplash(IMG.livingHero, { w: 900, h: 1100, q: 80 }),
@@ -77,7 +77,7 @@ export const MEGA_MENU: MegaMenuPanel[] = [
       },
     ],
     feature: {
-      eyebrow: "Nº 02 — Inside",
+      eyebrow: "Inside the atelier",
       title: "Twelve hands, one chair",
       href: "/craftsmanship",
       image: unsplash(IMG.craftA, { w: 900, h: 1100, q: 80 }),
@@ -98,7 +98,7 @@ export const MEGA_MENU: MegaMenuPanel[] = [
       },
     ],
     feature: {
-      eyebrow: "Nº 03 — Service",
+      eyebrow: "Our service",
       title: "Rooms composed with you",
       href: "/interior-design-service",
       image: unsplash(IMG.interiorD, { w: 900, h: 1100, q: 80 }),

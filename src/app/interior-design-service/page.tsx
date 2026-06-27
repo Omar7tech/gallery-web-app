@@ -13,11 +13,11 @@ import { JsonLdScript, breadcrumbSchema } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "Interior Design Service",
   description:
-    "Work one-to-one with a Solera designer — from a single room to a whole home. Considered, unhurried, and built around pieces made to fit your life.",
+    "Work one-to-one with a Solera designer - from a single room to a whole home. Considered, unhurried, and built around pieces made to fit your life.",
 };
 
 const steps = [
-  { n: "01", title: "Conversation", body: "We meet — in your space or over a call — to understand how you live, what you have, and what the room needs to become." },
+  { n: "01", title: "Conversation", body: "We meet - in your space or over a call - to understand how you live, what you have, and what the room needs to become." },
   { n: "02", title: "Concept", body: "Your designer develops a furnishing scheme: a plan, a palette, and a curated set of pieces with finishes and fabrics specified." },
   { n: "03", title: "Refinement", body: "We review together, adjust, and order material samples so every decision is made in your own light, not a showroom's." },
   { n: "04", title: "Installation", body: "We manage production and white-glove delivery, then place and style every piece. You walk into a finished room." },
@@ -47,7 +47,7 @@ export default function InteriorDesignServicePage() {
         serial="11"
         eyebrow="Design Service"
         title="Rooms composed with you."
-        intro="From a single piece to a whole home — work one-to-one with a Solera designer who listens first and specifies second. Complimentary on full projects."
+        intro="From a single piece to a whole home - work one-to-one with a Solera designer who listens first and specifies second. Complimentary on full projects."
         crumbs={[{ label: "Home", href: "/" }, { label: "Interior Design" }]}
         image={unsplash(IMG.interiorD, { w: 2000, h: 1100, q: 80 })}
       />

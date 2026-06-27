@@ -30,9 +30,9 @@ export default function HomePage() {
 
       <div className="container-page py-12 md:py-20">
         <CTABlock
-          eyebrow="Nº 11 — Design Service"
+          eyebrow="Nº 11 - Design Service"
           title="Let's compose your rooms together."
-          body="Work one-to-one with a Solera designer — from a single piece to a whole home. We visit, we listen, and we specify furniture made to fit your life."
+          body="Work one-to-one with a Solera designer - from a single piece to a whole home. We visit, we listen, and we specify furniture made to fit your life."
           primary={{ label: "Book a consultation", href: "/contact" }}
           secondary={{ label: "See the service", href: "/interior-design-service" }}
           image={unsplash(IMG.interiorE, { w: 2000, h: 1100, q: 80 })}

@@ -5,7 +5,7 @@ import Link from "next/link";
 import { gsap, useGSAP } from "@/lib/gsap";
 
 const LINE =
-  "Buy less. Choose well. Keep it for life — then give it to someone who will.";
+  "Buy less. Choose well. Keep it for life - then give it to someone who will.";
 
 export function DesignPhilosophy() {
   const ref = useRef<HTMLElement>(null);
@@ -38,7 +38,7 @@ export function DesignPhilosophy() {
   return (
     <section ref={ref} className="bg-chalk-deep">
       <div className="container-page py-28 text-center md:py-40">
-        <p className="eyebrow mb-10 text-brass">Nº 07 — Design Philosophy</p>
+        <p className="eyebrow mb-10 text-brass">Nº 07 - Design Philosophy</p>
         <h2 className="mx-auto max-w-5xl text-balance font-display text-4xl leading-[1.12] md:text-6xl lg:text-7xl lg:leading-[1.1]">
           {LINE.split(" ").map((w, i) => (
             <span key={i} data-w className="inline-block">
@@ -49,7 +49,7 @@ export function DesignPhilosophy() {
         </h2>
         <p className="mx-auto mt-12 max-w-xl text-lg leading-relaxed text-ink-soft">
           It is an old idea, and not ours alone. But it governs every decision we
-          make — from the trees we buy to the joints we refuse to shortcut.
+          make - from the trees we buy to the joints we refuse to shortcut.
         </p>
         <Link
           href="/about"

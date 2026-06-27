@@ -5,7 +5,7 @@ import { gsap, useGSAP } from "@/lib/gsap";
 import { cn } from "@/lib/utils";
 
 /**
- * The Horizon Line — Solera's signature element. A hairline with a brass node
+ * The Horizon Line - Solera's signature element. A hairline with a brass node
  * that draws in on scroll. Used to separate and frame editorial sections.
  */
 export function Horizon({

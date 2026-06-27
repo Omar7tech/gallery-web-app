@@ -12,14 +12,14 @@ import { JsonLdScript, breadcrumbSchema } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Talk to the Solera atelier — book a consultation, request a quote, or arrange a visit to our Hudson workshop.",
+    "Talk to the Solera atelier - book a consultation, request a quote, or arrange a visit to our Hudson workshop.",
 };
 
 const details = [
   { icon: Mail, label: "Email", value: SITE.email, href: `mailto:${SITE.email}` },
   { icon: Phone, label: "Telephone", value: SITE.phone, href: `tel:${SITE.phone.replace(/\s/g, "")}` },
   { icon: MapPin, label: "Atelier", value: SITE.address },
-  { icon: Clock, label: "Studio hours", value: "Tue–Sat, 10–6 (by appointment)" },
+  { icon: Clock, label: "Studio hours", value: "Tue-Sat, 10-6 (by appointment)" },
 ];
 
 export default function ContactPage() {
@@ -32,10 +32,10 @@ export default function ContactPage() {
         ])}
       />
       <PageHeader
-        serial="—"
+        serial="-"
         eyebrow="Say Hello"
         title="Let's begin a conversation."
-        intro="Whether you're furnishing a single room or a whole home — or simply have a question — we'd love to hear from you. Every message reaches a real person."
+        intro="Whether you're furnishing a single room or a whole home - or simply have a question - we'd love to hear from you. Every message reaches a real person."
         crumbs={[{ label: "Home", href: "/" }, { label: "Contact" }]}
         image={unsplash(IMG.interiorH, { w: 2000, h: 1100, q: 80 })}
       />

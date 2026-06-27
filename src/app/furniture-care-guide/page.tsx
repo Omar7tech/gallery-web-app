@@ -20,7 +20,7 @@ const careByMaterial: Record<string, { question: string; answer: string }[]> = {
     {
       question: "Everyday cleaning",
       answer:
-        "Dust with a soft, dry or barely-damp cloth, following the grain. Avoid all-purpose sprays and anything containing silicone or ammonia — they cloud the finish over time.",
+        "Dust with a soft, dry or barely-damp cloth, following the grain. Avoid all-purpose sprays and anything containing silicone or ammonia - they cloud the finish over time.",
     },
     {
       question: "Refreshing the finish",
@@ -30,14 +30,14 @@ const careByMaterial: Record<string, { question: string; answer: string }[]> = {
     {
       question: "Marks and rings",
       answer:
-        "Most water marks lift with a light re-oil. Deeper scratches can be sanded and spot-finished — contact us and we'll send the right grade and shade.",
+        "Most water marks lift with a light re-oil. Deeper scratches can be sanded and spot-finished - contact us and we'll send the right grade and shade.",
     },
   ],
   "Stone": [
     {
       question: "Sealing and spills",
       answer:
-        "Honed travertine is porous. Wipe spills — especially wine, citrus, and oil — promptly. We seal every stone top before delivery; reseal annually with a penetrating stone sealer.",
+        "Honed travertine is porous. Wipe spills - especially wine, citrus, and oil - promptly. We seal every stone top before delivery; reseal annually with a penetrating stone sealer.",
     },
     {
       question: "Cleaning",
@@ -66,14 +66,14 @@ const careByMaterial: Record<string, { question: string; answer: string }[]> = {
     {
       question: "Spills",
       answer:
-        "Blot immediately with a dry cloth — never rub. For stubborn marks, a slightly damp cloth and patience; avoid soaps and solvents entirely.",
+        "Blot immediately with a dry cloth - never rub. For stubborn marks, a slightly damp cloth and patience; avoid soaps and solvents entirely.",
     },
   ],
   "Textiles": [
     {
       question: "Routine care",
       answer:
-        "Vacuum upholstery gently with a brush attachment and rotate loose cushions to even out wear. Plump and reshape down-wrapped cushions regularly — softness is a feature, not a fault.",
+        "Vacuum upholstery gently with a brush attachment and rotate loose cushions to even out wear. Plump and reshape down-wrapped cushions regularly - softness is a feature, not a fault.",
     },
     {
       question: "Stains",
@@ -93,10 +93,10 @@ export default function FurnitureCareGuidePage() {
         ])}
       />
       <PageHeader
-        serial="—"
+        serial="-"
         eyebrow="Care Guide"
         title="Helping your pieces age well."
-        intro="A well-made piece doesn't need much — just a little attention, at the right moments. Here's how to care for every material we build with."
+        intro="A well-made piece doesn't need much - just a little attention, at the right moments. Here's how to care for every material we build with."
         crumbs={[{ label: "Home", href: "/" }, { label: "Furniture Care" }]}
         image={unsplash(IMG.materialTextile, { w: 2000, h: 1100, q: 80 })}
       />
@@ -119,7 +119,7 @@ export default function FurnitureCareGuidePage() {
       <section className="bg-paper py-16 md:py-20">
         <div className="container-page mx-auto max-w-3xl">
           <SectionHeader
-            serial="—"
+            serial="-"
             eyebrow="Included with every order"
             title="A care kit matched to your finish."
             intro="Every delivery arrives with the right oil, wax, or balm for your specific piece, plus a printed card of these instructions. Need a refill? Just ask."

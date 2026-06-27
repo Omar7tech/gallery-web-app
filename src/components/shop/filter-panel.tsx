@@ -127,7 +127,7 @@ export function FilterPanel({
         </div>
       </Group>
 
-      <Group title={`Price — up to ${formatPrice(filters.priceMax ?? PRICE_CEILING)}`}>
+      <Group title={`Price - up to ${formatPrice(filters.priceMax ?? PRICE_CEILING)}`}>
         <input
           type="range"
           min={PRICE_FLOOR}

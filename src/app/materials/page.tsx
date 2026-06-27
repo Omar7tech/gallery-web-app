@@ -12,7 +12,7 @@ import { IMG } from "@/lib/images";
 export const metadata: Metadata = {
   title: "Materials",
   description:
-    "The timber, stone, metal, textile, and leather Solera builds with — each chosen because it grows more beautiful with use.",
+    "The timber, stone, metal, textile, and leather Solera builds with - each chosen because it grows more beautiful with use.",
 };
 
 const typeLabels: Record<string, string> = {
@@ -36,7 +36,7 @@ export default function MaterialsPage() {
         serial="06"
         eyebrow="Honest Materials"
         title="We choose what ages well."
-        intro="A deliberately small palette — eight materials, each selected because it earns its patina. Nothing here is laminated, printed, or pretending to be something else."
+        intro="A deliberately small palette - eight materials, each selected because it earns its patina. Nothing here is laminated, printed, or pretending to be something else."
         crumbs={[{ label: "Home", href: "/" }, { label: "Materials" }]}
         image={unsplash(IMG.materialWood, { w: 2000, h: 1100, q: 80 })}
       />
@@ -79,10 +79,10 @@ export default function MaterialsPage() {
       <section className="bg-paper py-20 md:py-28">
         <div className="container-page">
           <SectionHeader
-            serial="—"
+            serial="-"
             eyebrow="A note on finishes"
             title="Why we refuse to seal things shut."
-            intro="A thick plastic lacquer looks flawless for five years, then cannot be mended. We finish with oil and wax instead — repairable in place, and warmer to the touch every year."
+            intro="A thick plastic lacquer looks flawless for five years, then cannot be mended. We finish with oil and wax instead - repairable in place, and warmer to the touch every year."
           />
         </div>
       </section>

@@ -1,5 +1,5 @@
 /* ============================================================================
-   SOLERA — Domain types
+   SOLERA - Domain types
    Frontend-only. All data is simulated and lives in src/data.
 ============================================================================ */
 

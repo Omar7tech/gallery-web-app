@@ -14,7 +14,7 @@ import { IMG } from "@/lib/images";
 export const metadata: Metadata = {
   title: "Collections",
   description:
-    "Explore Solera's five furniture collections — living room, bedroom, dining, office, and outdoor — each designed as a single, quiet language.",
+    "Explore Solera's five furniture collections - living room, bedroom, dining, office, and outdoor - each designed as a single, quiet language.",
 };
 
 export default function CollectionsPage() {
@@ -30,7 +30,7 @@ export default function CollectionsPage() {
         serial="02"
         eyebrow="The Collections"
         title="Five rooms, one quiet language."
-        intro="Each collection is composed for the way a room is actually lived in — scaled, finished, and built to be added to over a lifetime."
+        intro="Each collection is composed for the way a room is actually lived in - scaled, finished, and built to be added to over a lifetime."
         crumbs={[
           { label: "Home", href: "/" },
           { label: "Collections" },

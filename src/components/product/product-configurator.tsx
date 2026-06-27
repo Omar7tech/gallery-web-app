@@ -61,7 +61,7 @@ export function ProductConfigurator({ product }: { product: Product }) {
 
   function downloadSpec() {
     const lines = [
-      `SOLERA — SPECIFICATION SHEET`,
+      `SOLERA - SPECIFICATION SHEET`,
       `========================================`,
       ``,
       `${product.name}`,
@@ -80,7 +80,7 @@ export function ProductConfigurator({ product }: { product: Product }) {
       `MATERIALS`,
       ...materialSwatches.map((m) => `  - ${m!.name} (${m!.origin})`),
       ``,
-      `© ${new Date().getFullYear()} Solera Furniture Atelier — Hudson, New York`,
+      `© ${new Date().getFullYear()} Solera Furniture Atelier - Hudson, New York`,
     ].join("\n");
 
     const blob = new Blob([lines], { type: "text/plain" });
@@ -92,7 +92,7 @@ export function ProductConfigurator({ product }: { product: Product }) {
     URL.revokeObjectURL(url);
     toast({
       title: "Spec sheet downloaded",
-      description: `${product.name} — full specification`,
+      description: `${product.name} - full specification`,
       variant: "success",
     });
   }
@@ -123,7 +123,7 @@ export function ProductConfigurator({ product }: { product: Product }) {
         {product.isNew && <Badge variant="brass">New</Badge>}
         {product.isBestSeller && <Badge variant="patina">Best Seller</Badge>}
         <span className="eyebrow text-muted">
-          {product.category} — Nº {product.serial}
+          {product.category} - Nº {product.serial}
         </span>
       </div>
 
@@ -153,7 +153,7 @@ export function ProductConfigurator({ product }: { product: Product }) {
             {materialSwatches.map((m) => (
               <span
                 key={m!.id}
-                title={`${m!.name} — ${m!.origin}`}
+                title={`${m!.name} - ${m!.origin}`}
                 className="flex items-center gap-2 rounded-full border border-line py-1.5 pl-1.5 pr-3 text-xs text-ink-soft"
               >
                 <span
@@ -217,7 +217,7 @@ export function ProductConfigurator({ product }: { product: Product }) {
 
       <div className="mt-8 flex items-center gap-2 rounded-md bg-chalk-deep px-4 py-3 text-sm text-ink-soft">
         <Clock size={16} className="text-brass" aria-hidden />
-        Made to order — approx. {product.leadTimeWeeks} weeks
+        Made to order - approx. {product.leadTimeWeeks} weeks
       </div>
 
       {/* Actions */}
@@ -243,7 +243,7 @@ export function ProductConfigurator({ product }: { product: Product }) {
       <Modal
         open={quoteOpen}
         onClose={() => setQuoteOpen(false)}
-        title={`Enquire — ${product.name}`}
+        title={`Enquire - ${product.name}`}
       >
         <p className="mb-6 text-sm text-ink-soft">
           Tell us a little about your space and we'll prepare a tailored quote,

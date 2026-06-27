@@ -8,8 +8,8 @@ import { cn } from "@/lib/utils";
 const OPTIONS: { value: SortOption; label: string }[] = [
   { value: "featured", label: "Featured" },
   { value: "newest", label: "Newest" },
-  { value: "price-asc", label: "Price — Low to High" },
-  { value: "price-desc", label: "Price — High to Low" },
+  { value: "price-asc", label: "Price - Low to High" },
+  { value: "price-desc", label: "Price - High to Low" },
   { value: "name", label: "Alphabetical" },
 ];
 

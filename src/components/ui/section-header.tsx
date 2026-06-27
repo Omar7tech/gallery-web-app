@@ -6,6 +6,7 @@ import { TextReveal } from "@/components/motion/text-reveal";
 
 type SectionHeaderProps = {
   eyebrow?: string;
+  /** @deprecated retired with the serial-number motif; ignored. */
   serial?: string;
   title: string;
   intro?: string;
@@ -17,10 +18,9 @@ type SectionHeaderProps = {
   light?: boolean;
 };
 
-/** Editorial section header: serial + eyebrow, large display title, optional link. */
+/** Editorial section header: an accent rule + eyebrow, large display title, optional link. */
 export function SectionHeader({
   eyebrow,
-  serial,
   title,
   intro,
   align = "left",
@@ -37,7 +37,7 @@ export function SectionHeader({
         className,
       )}
     >
-      {(eyebrow || serial) && (
+      {eyebrow && (
         <Reveal variant="fade">
           <div
             className={cn(
@@ -45,26 +45,12 @@ export function SectionHeader({
               align === "center" && "justify-center",
             )}
           >
-            {serial && (
-              <span
-                className={cn(
-                  "serial text-sm",
-                  light ? "text-brass-soft" : "text-brass",
-                )}
-              >
-                Nº {serial}
-              </span>
-            )}
-            {eyebrow && (
-              <span
-                className={cn(
-                  "eyebrow",
-                  light ? "text-chalk/60" : "text-muted",
-                )}
-              >
-                {eyebrow}
-              </span>
-            )}
+            <span className="h-px w-7 bg-brass" aria-hidden />
+            <span
+              className={cn("eyebrow", light ? "text-chalk/60" : "text-muted")}
+            >
+              {eyebrow}
+            </span>
           </div>
         </Reveal>
       )}

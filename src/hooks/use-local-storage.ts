@@ -52,6 +52,5 @@ export function useLocalStorage<T>(
     return () => window.removeEventListener("storage", onStorage);
   }, [key]);
 
-  void hydrated;
   return [value, set];
 }

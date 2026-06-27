@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 
 type PageHeaderProps = {
   eyebrow?: string;
+  /** @deprecated retired with the serial-number motif; ignored. */
   serial?: string;
   title: string;
   intro?: string;
@@ -20,7 +21,6 @@ type PageHeaderProps = {
  */
 export function PageHeader({
   eyebrow,
-  serial,
   title,
   intro,
   crumbs,
@@ -50,17 +50,15 @@ export function PageHeader({
         )}
       >
         <Breadcrumb items={crumbs} light />
-        {(eyebrow || serial) && (
+        {eyebrow && (
           <div
             className={cn(
               "flex items-center gap-3",
               align === "center" && "justify-center",
             )}
           >
-            {serial && (
-              <span className="serial text-sm text-brass-soft">Nº {serial}</span>
-            )}
-            {eyebrow && <span className="eyebrow text-chalk/55">{eyebrow}</span>}
+            <span className="h-px w-7 bg-brass-soft" aria-hidden />
+            <span className="eyebrow text-chalk/55">{eyebrow}</span>
           </div>
         )}
         <h1

@@ -12,7 +12,7 @@ import { JsonLdScript, breadcrumbSchema } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "FAQ",
   description:
-    "Answers to common questions about Solera — lead times, materials, care, delivery, returns, and our design service.",
+    "Answers to common questions about Solera - lead times, materials, care, delivery, returns, and our design service.",
 };
 
 export default function FaqPage() {
@@ -36,7 +36,7 @@ export default function FaqPage() {
         ])}
       />
       <PageHeader
-        serial="—"
+        serial="-"
         eyebrow="Good Questions"
         title="Everything, answered honestly."
         intro="Lead times, materials, care, delivery, and the design service. If your question isn't here, we're one message away."
@@ -66,7 +66,7 @@ export default function FaqPage() {
         <div className="mx-auto mt-20 max-w-2xl rounded-xl border border-line bg-paper px-8 py-12 text-center">
           <h2 className="font-display text-3xl text-ink">Still wondering?</h2>
           <p className="mx-auto mt-3 max-w-md text-ink-soft">
-            Our atelier team answers every message personally — usually within a
+            Our atelier team answers every message personally - usually within a
             business day.
           </p>
           <Link href="/contact" className={buttonVariants({ variant: "primary", size: "lg" }) + " mt-7"}>

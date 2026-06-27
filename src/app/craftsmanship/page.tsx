@@ -13,20 +13,20 @@ import { JsonLdScript, breadcrumbSchema } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "Craftsmanship",
   description:
-    "How a Solera piece is made — from selecting the boards by eye to hand-cutting joinery and finishing with oil and wax. Built to order in Hudson, New York.",
+    "How a Solera piece is made - from selecting the boards by eye to hand-cutting joinery and finishing with oil and wax. Built to order in Hudson, New York.",
 };
 
 const steps = [
   {
     n: "01",
     title: "We select the boards by eye",
-    body: "Every order begins at the timber rack. We choose and match boards by hand for grain and colour, so the wood reads as one continuous piece — not a patchwork.",
+    body: "Every order begins at the timber rack. We choose and match boards by hand for grain and colour, so the wood reads as one continuous piece - not a patchwork.",
     image: IMG.materialWood,
   },
   {
     n: "02",
     title: "We cut the joinery by hand",
-    body: "Mortise-and-tenon, dovetail, breadboard end. The joints that let wood move with the seasons are the joints that can't be rushed — so we don't rush them.",
+    body: "Mortise-and-tenon, dovetail, breadboard end. The joints that let wood move with the seasons are the joints that can't be rushed - so we don't rush them.",
     image: IMG.craftA,
   },
   {
@@ -56,7 +56,7 @@ export default function CraftsmanshipPage() {
         serial="05"
         eyebrow="Inside the Atelier"
         title="Twelve pairs of hands, one chair."
-        intro="Every Solera piece is built to order in our Hudson workshop. Here is exactly how — step by step, with nothing hidden."
+        intro="Every Solera piece is built to order in our Hudson workshop. Here is exactly how - step by step, with nothing hidden."
         crumbs={[{ label: "Home", href: "/" }, { label: "Craftsmanship" }]}
         image={unsplash(IMG.craftA, { w: 2000, h: 1100, q: 80 })}
       />
@@ -104,7 +104,7 @@ export default function CraftsmanshipPage() {
       <section className="bg-ink py-20 text-chalk md:py-28">
         <div className="container-page">
           <SectionHeader
-            serial="—"
+            serial="-"
             eyebrow="The guarantee"
             title="If a joint ever fails, we'll mend it. For as long as you own it."
             light

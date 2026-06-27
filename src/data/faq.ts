@@ -5,7 +5,7 @@ export const faqItems: FaqItem[] = [
     group: "Orders & Lead Times",
     question: "Why does an order take eleven weeks?",
     answer:
-      "Every Solera piece is made to order. When you place an order, we select the specific boards or hides for it, match the grain, and build it once — to your finish and fabric. The wait is the work happening. Lead times are shown on each product and typically range from 6 to 14 weeks.",
+      "Every Solera piece is made to order. When you place an order, we select the specific boards or hides for it, match the grain, and build it once - to your finish and fabric. The wait is the work happening. Lead times are shown on each product and typically range from 6 to 14 weeks.",
   },
   {
     group: "Orders & Lead Times",
@@ -23,7 +23,7 @@ export const faqItems: FaqItem[] = [
     group: "Materials & Care",
     question: "Is unlacquered brass going to tarnish?",
     answer:
-      "It will patina — and we consider that a feature, not a fault. Living brass develops a warm, mottled depth over months. If you prefer it bright, a soft cloth and a little brass polish returns it in minutes. We will never lacquer it shut.",
+      "It will patina - and we consider that a feature, not a fault. Living brass develops a warm, mottled depth over months. If you prefer it bright, a soft cloth and a little brass polish returns it in minutes. We will never lacquer it shut.",
   },
   {
     group: "Materials & Care",

@@ -11,7 +11,7 @@ import { JsonLdScript, breadcrumbSchema } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "Projects",
   description:
-    "Selected Solera interiors — full residences, apartments, and retreats furnished end to end, from the Hudson Valley to Copenhagen.",
+    "Selected Solera interiors - full residences, apartments, and retreats furnished end to end, from the Hudson Valley to Copenhagen.",
 };
 
 export default function ProjectsPage() {
@@ -24,10 +24,10 @@ export default function ProjectsPage() {
         ])}
       />
       <PageHeader
-        serial="—"
+        serial="-"
         eyebrow="Selected Work"
         title="Whole homes, composed."
-        intro="A selection of interiors furnished end to end through our design service — each one a study in restraint, material, and light."
+        intro="A selection of interiors furnished end to end through our design service - each one a study in restraint, material, and light."
         crumbs={[{ label: "Home", href: "/" }, { label: "Projects" }]}
         image={unsplash(IMG.interiorB, { w: 2000, h: 1100, q: 80 })}
       />
@@ -56,7 +56,7 @@ export default function ProjectsPage() {
                   <Reveal variant="up" y={24}>
                     <span className="serial text-sm text-brass">Nº {p.serial}</span>
                     <p className="eyebrow mt-2 text-muted">
-                      {p.type} — {p.year}
+                      {p.type} - {p.year}
                     </p>
                     <h2 className="mt-3 font-display text-3xl text-ink md:text-4xl">
                       {p.title}

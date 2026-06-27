@@ -24,7 +24,7 @@ export function RecentlyViewed({ currentSlug }: { currentSlug: string }) {
 
   return (
     <section className="container-page border-t border-line py-20 md:py-28">
-      <SectionHeader serial="—" eyebrow="Where you've been" title="Recently viewed." />
+      <SectionHeader serial="-" eyebrow="Where you've been" title="Recently viewed." />
       <div className="mt-10">
         <ProductRow products={items} />
       </div>

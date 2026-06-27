@@ -52,7 +52,7 @@ export const projects: Project[] = [
     year: 2023,
     type: "Full Residence",
     summary:
-      "Four floors furnished in a single muted palette — bleached oak, bone bouclé, living brass — for a collector couple.",
+      "Four floors furnished in a single muted palette - bleached oak, bone bouclé, living brass - for a collector couple.",
     image: unsplash(IMG.interiorF, { w: 1600, h: 1100, q: 80 }),
     gallery: [IMG.bedroomA, IMG.interiorG, IMG.diningB, IMG.interiorH].map((id) =>
       unsplash(id, { w: 1400, h: 1000, q: 80 }),
@@ -66,7 +66,7 @@ export const projects: Project[] = [
     year: 2023,
     type: "Studio & Living",
     summary:
-      "A working studio and living space kept deliberately spare — a few large pieces, a great deal of light.",
+      "A working studio and living space kept deliberately spare - a few large pieces, a great deal of light.",
     image: unsplash(IMG.interiorL, { w: 1600, h: 1100, q: 80 }),
     gallery: [IMG.officeHero, IMG.interiorO, IMG.loungeChairA, IMG.interiorM].map(
       (id) => unsplash(id, { w: 1400, h: 1000, q: 80 }),

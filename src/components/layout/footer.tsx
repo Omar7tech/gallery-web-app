@@ -27,7 +27,7 @@ export function Footer() {
           </div>
 
           <div className="lg:pl-12">
-            <p className="eyebrow text-brass-soft">The Ledger — Seasonal Dispatch</p>
+            <p className="eyebrow text-brass-soft">The Ledger - Seasonal Dispatch</p>
             <h2 className="mt-4 max-w-md font-display text-3xl text-chalk md:text-4xl">
               New pieces, quietly announced.
             </h2>

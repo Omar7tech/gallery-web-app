@@ -25,7 +25,7 @@ export default function Error({
           A joint came loose.
         </h1>
         <p className="mx-auto mt-5 max-w-md text-lg text-ink-soft">
-          An unexpected error interrupted this page. Try again — and if it
+          An unexpected error interrupted this page. Try again - and if it
           persists, we'd genuinely like to know.
         </p>
         <div className="mt-9 flex flex-wrap items-center justify-center gap-4">

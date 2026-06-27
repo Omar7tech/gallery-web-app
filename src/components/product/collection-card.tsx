@@ -36,8 +36,8 @@ export function CollectionCard({
       />
       <div className="absolute inset-0 z-10 flex flex-col justify-between p-6 md:p-8">
         <div className="flex items-center justify-between">
-          <span className="serial text-sm text-chalk/90">
-            Nº {collection.serial}
+          <span className="font-mono text-xs uppercase tracking-[0.16em] text-chalk/80">
+            {collection.pieceCount} pieces
           </span>
           <span className="grid h-10 w-10 place-items-center rounded-full border border-chalk/40 text-chalk opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:bg-chalk group-hover:text-ink">
             <ArrowUpRight size={16} aria-hidden />

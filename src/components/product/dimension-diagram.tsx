@@ -14,9 +14,9 @@ export function DimensionDiagram({
       keys.some((k) => d.label.toLowerCase().includes(k)),
     )?.value;
 
-  const width = find(["width", "length"]) ?? "—";
-  const depth = find(["depth"]) ?? "—";
-  const height = find(["height"]) ?? "—";
+  const width = find(["width", "length"]) ?? "-";
+  const depth = find(["depth"]) ?? "-";
+  const height = find(["height"]) ?? "-";
 
   return (
     <svg

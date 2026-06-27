@@ -9,7 +9,7 @@ import { IMG } from "@/lib/images";
 export const metadata: Metadata = {
   title: "New Arrivals",
   description:
-    "The latest pieces from the Solera bench — newly released designs in solid timber, stone, and honest textiles.",
+    "The latest pieces from the Solera bench - newly released designs in solid timber, stone, and honest textiles.",
 };
 
 export default function NewArrivalsPage() {
@@ -22,7 +22,7 @@ export default function NewArrivalsPage() {
         ])}
       />
       <PageHeader
-        serial="—"
+        serial="-"
         eyebrow="Just Off the Bench"
         title="New arrivals."
         intro="The most recent additions to the collection. Each one made to order, each one built to outlast its season."

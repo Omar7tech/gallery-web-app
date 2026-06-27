@@ -16,7 +16,7 @@ import { JsonLdScript, breadcrumbSchema } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Solera is a furniture atelier in Hudson, New York, building heirloom pieces by the solera method — heritage craft blended with modern design.",
+    "Solera is a furniture atelier in Hudson, New York, building heirloom pieces by the solera method - heritage craft blended with modern design.",
 };
 
 const values = [
@@ -34,7 +34,7 @@ const values = [
   },
   {
     title: "Made, not manufactured",
-    body: "Each order is built once, by hand, in our own workshop — never held in a warehouse.",
+    body: "Each order is built once, by hand, in our own workshop - never held in a warehouse.",
   },
 ];
 
@@ -55,10 +55,10 @@ export default function AboutPage() {
         ])}
       />
       <PageHeader
-        serial="—"
+        serial="-"
         eyebrow={`The Atelier, est. ${SITE.founded}`}
         title="We make furniture meant to outlast us."
-        intro="Solera takes its name from the centuries-old method of ageing wine — where each new vintage is blended with the old, and nothing is ever wholly replaced. It is how we believe a home should be built."
+        intro="Solera takes its name from the centuries-old method of ageing wine - where each new vintage is blended with the old, and nothing is ever wholly replaced. It is how we believe a home should be built."
         crumbs={[{ label: "Home", href: "/" }, { label: "About" }]}
         image={unsplash(IMG.interiorE, { w: 2000, h: 1100, q: 80 })}
       />
@@ -70,7 +70,7 @@ export default function AboutPage() {
             <span className="eyebrow text-brass">Our Mission</span>
           </Reveal>
           <h2 className="max-w-3xl text-3xl leading-snug text-ink md:text-4xl lg:text-5xl">
-            <TextReveal text="To make fewer, better things — from materials that age into beauty, by hands that still cut their own joints." />
+            <TextReveal text="To make fewer, better things - from materials that age into beauty, by hands that still cut their own joints." />
           </h2>
         </div>
       </section>
@@ -170,7 +170,7 @@ export default function AboutPage() {
         <CTABlock
           eyebrow="Begin"
           title="Start with a single piece."
-          body="Browse the collections, or talk to us about the room you're trying to compose. There's no rush — these are decisions meant to last."
+          body="Browse the collections, or talk to us about the room you're trying to compose. There's no rush - these are decisions meant to last."
           primary={{ label: "Explore collections", href: "/collections" }}
           secondary={{ label: "Visit the craft", href: "/craftsmanship" }}
           image={collections[0].image}

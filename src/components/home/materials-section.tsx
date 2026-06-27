@@ -19,7 +19,7 @@ export function MaterialsSection() {
         serial="06"
         eyebrow="Honest Materials"
         title="We choose what ages well."
-        intro="A small, deliberate palette of timber, stone, metal, textile, and leather — each selected because it grows more beautiful with use, not less."
+        intro="A small, deliberate palette of timber, stone, metal, textile, and leather - each selected because it grows more beautiful with use, not less."
         link={{ label: "Explore materials", href: "/materials" }}
       />
 

@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 type MagneticProps = {
   children: React.ReactNode;
   className?: string;
-  /** Pull strength (0–1). */
+  /** Pull strength (0-1). */
   strength?: number;
 };
 

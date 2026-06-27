@@ -24,7 +24,7 @@ export function LegalPage({
   return (
     <>
       <PageHeader
-        serial="—"
+        serial="-"
         eyebrow={`Last updated ${updated}`}
         title={title}
         intro={intro}

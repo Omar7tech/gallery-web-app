@@ -23,7 +23,7 @@ export function InteriorInspiration() {
 
       <div className="container-page py-20 md:py-28">
         <Reveal variant="fade">
-          <span className="eyebrow text-brass-soft">Nº 08 — Interiors</span>
+          <span className="eyebrow text-brass-soft">Nº 08 - Interiors</span>
         </Reveal>
         <h2 className="mt-6 max-w-4xl text-4xl leading-tight text-chalk md:text-6xl lg:text-7xl">
           <TextReveal text="A room is a single composition." />
@@ -31,8 +31,8 @@ export function InteriorInspiration() {
         <div className="mt-8 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <Reveal variant="up" y={20}>
             <p className="max-w-md text-lg leading-relaxed text-chalk/75">
-              See how our pieces live together — across apartments, farmhouses,
-              and ateliers — in the Solera lookbook.
+              See how our pieces live together - across apartments, farmhouses,
+              and ateliers - in the Solera lookbook.
             </p>
           </Reveal>
           <Reveal variant="fade">

@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
     title: product.name,
     description: product.shortDescription,
     openGraph: {
-      title: `${product.name} — Solera`,
+      title: `${product.name} - Solera`,
       description: product.shortDescription,
       images: [product.heroImage],
     },
@@ -50,7 +50,7 @@ export default async function ProductPage({ params }: Params) {
     {
       question: "Care & maintenance",
       answer:
-        "Dust with a soft, dry cloth. Refresh oiled or waxed surfaces once or twice a year with the care kit included in your delivery. Keep out of direct, prolonged sunlight and away from heat sources. Wipe spills promptly — never let liquid stand on timber or stone.",
+        "Dust with a soft, dry cloth. Refresh oiled or waxed surfaces once or twice a year with the care kit included in your delivery. Keep out of direct, prolonged sunlight and away from heat sources. Wipe spills promptly - never let liquid stand on timber or stone.",
     },
     {
       question: "Shipping & delivery",
@@ -130,7 +130,7 @@ export default async function ProductPage({ params }: Params) {
       <section className="container-page py-20 md:py-28">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
           <div>
-            <SectionHeader serial="—" eyebrow="Specification" title="The details." as="h2" />
+            <SectionHeader serial="-" eyebrow="Specification" title="The details." as="h2" />
             <dl className="mt-10 divide-y divide-line border-t border-line">
               {[...product.dimensions, ...product.specs].map((row, i) => (
                 <div key={i} className="flex justify-between gap-6 py-4">
@@ -143,7 +143,7 @@ export default async function ProductPage({ params }: Params) {
             </dl>
           </div>
           <div>
-            <SectionHeader serial="—" eyebrow="Measured Drawing" title="Dimensions." as="h2" />
+            <SectionHeader serial="-" eyebrow="Measured Drawing" title="Dimensions." as="h2" />
             <div className="mt-10 rounded-lg border border-line bg-paper p-8">
               <DimensionDiagram dimensions={product.dimensions} />
             </div>
@@ -157,7 +157,7 @@ export default async function ProductPage({ params }: Params) {
       {/* Related */}
       <section className="container-page border-t border-line py-20 md:py-28">
         <SectionHeader
-          serial="—"
+          serial="-"
           eyebrow="You may also consider"
           title="Pieces that sit well together."
           link={{
@@ -176,7 +176,7 @@ export default async function ProductPage({ params }: Params) {
         <CTABlock
           eyebrow="Not sure it's right for your room?"
           title="Talk it through with a designer."
-          body="Send us your dimensions and a photo or two. We'll tell you honestly whether this is the right piece — and suggest alternatives if it isn't."
+          body="Send us your dimensions and a photo or two. We'll tell you honestly whether this is the right piece - and suggest alternatives if it isn't."
           primary={{ label: "Book a consultation", href: "/contact" }}
           secondary={{ label: "Our design service", href: "/interior-design-service" }}
           image={unsplash(IMG.interiorH, { w: 2000, h: 1100, q: 80 })}
